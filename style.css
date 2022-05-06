@@ -1,0 +1,40 @@
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.point {
+  border-radius: 50%;
+  background-color: #000000;
+  width: 4px;
+  height: 4px;
+  transition: 400ms;
+}
+
+.close {
+  justify-content:center ;
+  gap: 0;
+}
+
+.active:first-child {
+  width : 20px;
+  border-radius: 10px;
+  transform: rotate(45deg);
+  position: absolute;
+  transition: 400ms;
+}
+
+.active:nth-child(2){
+opacity: 0;
+}
+
+.active:last-child{
+    width : 20px;
+  border-radius: 10px;
+  transform: rotate(135deg);
+  position: relative;
+  top: -2px;
+  transition: 400ms;
+}
